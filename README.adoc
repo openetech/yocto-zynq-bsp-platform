@@ -1,0 +1,20 @@
+Zynq BSP
+
+To get the BSP you need to have `repo` installed and use it as:
+
+Install the `repo` utility:
+
+[source,console]
+$: mkdir ~/bin
+$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+$: chmod a+x ~/bin/repo
+
+Download the BSP source:
+
+[source,console]
+$: PATH=${PATH}:~/bin
+$: mkdir zynq-bsp
+$: cd zynq-bsp
+$: repo init -u https://github.com/openetech/yocto-zynq-bsp-platform -b master 
+$: repo sync
+
